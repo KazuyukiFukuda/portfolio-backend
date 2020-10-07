@@ -1,0 +1,7 @@
+<h1>All books</h1>
+{% for Post in object_list %}
+    <ul>
+        <li>Name: {{ Post.person_name }}</li>
+        <li>Age: {{ Post.person_age }}</li>
+    </ul>
+{% endfor %}
