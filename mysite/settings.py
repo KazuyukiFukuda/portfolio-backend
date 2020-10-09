@@ -37,10 +37,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #app
     'blog.apps.BlogConfig',
-    'rest_framework',
     'api.apps.ApiConfig',
+
+    #library
+    'rest_framework',
+    'markdownx'
 ]
+
+#MEDIA_URL and MEDIA_ROOT are for using images in markdown
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
